@@ -1,0 +1,14 @@
+{
+  "name": "ya-webadb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm recursive run build",
+    "test": "pnpm recursive run test",
+    "lint": "pnpm recursive run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
