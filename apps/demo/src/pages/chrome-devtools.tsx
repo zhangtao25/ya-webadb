@@ -307,6 +307,8 @@ const ChromeDevToolsPage: NextPage = observer(function ChromeDevTools() {
         childWindow.addEventListener("message", (e) => {
             if (
                 typeof e.data !== "object" ||
+                // !"type in e.data"恒为假
+                // @ts-ignore
                 !"type in e.data" ||
                 e.data.type !== "AdbWebSocket"
             ) {
